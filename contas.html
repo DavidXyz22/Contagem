@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contagem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/topnav.css">
+  <style>
+      body {
+        background-image: url("img/image.jpg");
+        background-size: cover;
+     }
+  </style>  
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="home.html">Home</a>
+    <a href="contas.html" class="active">Contas</a>
+    <a href="informar.html">Informar</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+<h1>Contas</h1>
+
+<p>Selecione a opção desejada e depois submeta.</p>
+
+<form action="contas.php" method="POST">
+  <label for="contas">Escolher opcão:</label>
+  <select name="contas" id="contas">
+    <option value="tdconta">Mostrar todas as contas</option>
+    <option value="ultconta">Mostrar a última conta</option>
+    <option value="maisconta">Mostrar conta mais cara</option>
+    <option value="menosconta">Mostrar conta mais barata</option>
+    <option value="mediaconta">Média das contas</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+  <script src="js/topnav.js"></script>
+</body>
+</html>

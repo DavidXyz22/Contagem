@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contagem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/topnav.css">
+  <style>
+      body {
+        background-image: url("img/informar.jpg");
+        background-size: cover;
+      }
+    </style>  
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="home.html">Home</a>
+    <a href="contas.html">Contas</a>
+    <a href="informar.html" class="active">Informar</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <h1>Informar</h1>
+
+<p>Insira as informações necessárias para se criar uma conta no banco de dados do Contagem</p>
+
+<form action="informar.php" method="POST">
+    <label for="data">Data:</label>
+    <input type="date" id="data" name="data">
+  <div>
+    <h3>Tipo de conta</h3>
+    <label class="container">Água
+      <input type="radio" checked="checked" name="tipo" value="Água">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Luz
+      <input type="radio" name="tipo" value="Luz">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Gás
+      <input type="radio" name="tipo" value="Gás">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Telefone
+      <input type="radio" name="tipo" value="Telefone">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Internet
+      <input type="radio" name="tipo" value="Internet">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Aluguel
+      <input type="radio" name="tipo" value="Aluguel">
+      <span class="checkmark"></span>
+    </label>
+  </div>
+  <br>
+  <label for="valor">Valor:</label>
+  <input type="number" id="valor" name="valor">
+  <input type="submit" value="Submit">
+</form>
+
+<script src="js/topnav.js"></script>
+</body>
+</html>
